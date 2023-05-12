@@ -1,0 +1,146 @@
+/* Reset default styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Default font rules */
+body {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Form elements */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Page styles */
+div.page {
+  height: 100vh;
+}
+
+/* Hero section */
+div.hero {
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.hero-content {
+  background-color: rgba(255, 255, 255, 0.88);
+  width: 25vw;
+  height: 100vh;
+}
+
+/* Centered content */
+div.content-centered {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh;
+}
+
+/* Column layout */
+div.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo styles */
+.logoL1, .logoL2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logoL1 {
+  font-weight: 200;
+  font-size: 75px;
+  margin-bottom: -40px;
+}
+
+.logoL2 {
+  font-size: 66px;
+  font-weight: 200;
+}
+
+/* Link styles */
+#links a, li {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+#links {
+  margin-bottom: 30px;
+}
+
+/* Call to action button */
+a.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #eaeaea;
+  text-decoration: none;
+  color: #333333;
+}
+
+a.cta:hover {
+  background-color: #cccccc;
+}
