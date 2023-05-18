@@ -26,6 +26,29 @@ body {
   background-color: #fff;
 }
 
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  div.hero-content {
+    width: 100vw;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  div.hero-content {
+    width: 400px
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1025px) {
+  div.hero-content {
+    width: 500px
+  }
+}
+
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
@@ -80,7 +103,6 @@ div.hero {
 
 div.hero-content {
   background-color: rgba(255, 255, 255, 0.88);
-  width: 25vw;
   height: 100vh;
 }
 
