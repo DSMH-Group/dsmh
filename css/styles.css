@@ -94,6 +94,10 @@ body {
   div.hero-content {
     width: 100vw;
   }
+  ul.service_items {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Tablet styles */
@@ -101,12 +105,19 @@ body {
   div.hero-content {
     width: 400px
   }
+  ul.service_items {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Desktop styles */
 @media only screen and (min-width: 1025px) {
   div.hero-content {
     width: 500px
+  }
+  ul.service_items {
+    flex-direction: row;
   }
 }
 
@@ -170,7 +181,7 @@ button {
 
 /* Page styles */
 div.page {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Hero section */
@@ -230,6 +241,8 @@ li {
   font-size: 24px;
   color: black;
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 #links {
@@ -301,4 +314,20 @@ p.strong {
 
 div.padded {
   padding: 50px;
+}
+
+ul.service_items {
+  display: flex;
+}
+
+li.service_item {
+  width: 30%;
+  min-width: 400px;
+  border: 3px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+
+p.service_item_body {
+  font-size: 18px;
 }
