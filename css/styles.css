@@ -1,5 +1,65 @@
 /* Reset default styles */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -13,7 +73,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -50,14 +112,27 @@ body {
 
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0.5em;
   font-weight: bold;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
 
 /* Links */
 a {
@@ -76,14 +151,18 @@ img {
 }
 
 /* Lists */
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 /* Form elements */
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -109,8 +188,10 @@ div.hero-content {
 /* Centered content */
 div.content-centered {
   display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
+  justify-content: center;
+  /* Horizontally center */
+  align-items: center;
+  /* Vertically center */
   height: 100vh;
 }
 
@@ -122,7 +203,8 @@ div.column {
 }
 
 /* Logo styles */
-.logoL1, .logoL2 {
+.logoL1,
+.logoL2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +225,8 @@ div.column {
 }
 
 /* Link styles */
-#links a, li {
+#links a,
+li {
   font-size: 24px;
   color: black;
   text-align: center;
@@ -208,4 +291,14 @@ a.cta:hover {
 .contact-info {
   text-align: center;
   margin: 10px 0;
+}
+
+p.strong {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center !important;
+}
+
+div.padded {
+  padding: 50px;
 }
