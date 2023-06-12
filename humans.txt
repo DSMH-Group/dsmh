@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    S.G.Seyone -- Web Developer -- https://github.com/seyone22
 
 # THANKS
 
