@@ -7,6 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -176,9 +178,9 @@ body {
 	background-color: #fff;
 }
 
-
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
+	/* Styles for screens up to 600px wide */
 	div.hero-content {
 		width: 100vw;
 	}
@@ -187,10 +189,46 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	div.padded {
+		padding: 50px;
+	}
+
+	div.columns {
+		flex-direction: column-reverse;
+	}
+	div.column{
+		width: 100%;
+	}
+
+	#after3Tall {
+		margin-top: 0 !important;
+	}
+
+	#floater {
+		bottom: -1850px;
+	}
+
+	#columnImage {
+		height: 400px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.padded {
+		margin: 0;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.list {
+		margin-left: 0 !important;
+	}
 }
 
 /* Tablet styles */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+	/* Styles for screens between 601px and 1024px wide wide */
 	div.hero-content {
 		width: 400px
 	}
@@ -199,16 +237,29 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	div.padded {
+		width: 80%;
+	}
+
+	.list {
+		margin: 0 !important;
+	}
 }
 
 /* Desktop styles */
 @media only screen and (min-width: 1025px) {
+	/* Styles for screens wider than 1024px */
 	div.hero-content {
 		width: 500px
 	}
 
 	ul.service_items {
 		flex-direction: row;
+	}
+
+	div.padded {
+		width: 75%
 	}
 }
 
@@ -271,8 +322,19 @@ button {
 }
 
 /* Page styles */
-div.page {
+div.pageColumns {
 	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+div.pageRows {
+	padding-top: 48px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Hero section */
@@ -297,8 +359,12 @@ div.content-centered {
 	height: 100vh;
 }
 
+.textBlockPadding {
+	padding: 12px 24px 0;
+}
+
 /* Column layout */
-div.column {
+div.columnList {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -331,7 +397,7 @@ div.column {
 li {
 	font-size: 24px;
 	color: black;
-	text-align: center;
+
 	margin: 0;
 	padding: 0;
 }
@@ -345,15 +411,55 @@ a.cta {
 	display: inline-block;
 	padding: 10px 20px;
 	border-radius: 20px;
-	background-color: #eaeaea;
+	background-color: #ac84e3;
 	text-decoration: none;
-	color: #333333;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	width: 200px;
 }
 
 a.cta:hover {
-	background-color: #cccccc;
+	background-color: #955ee0;
 }
 
+p.strong {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center !important;
+}
+
+p.strong-body {
+	font-size: 24px;
+	text-align: justify !important;
+	font-family: 'Nunito', 'sans-serif';
+}
+
+ul.service_items {
+	display: flex;
+	justify-content: center;
+}
+
+li.service_item {
+	width: 30%;
+	min-width: 400px;
+	border: 3px solid black;
+	padding: 20px;
+	margin: 10px;
+}
+
+p.service_item_body {
+	font-size: 18px;
+}
+
+.columns {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	width: 50%;
+}
 
 /* Footer styles */
 .footer {
@@ -385,44 +491,52 @@ a.cta:hover {
 	margin: 0 5px;
 }
 
-.linkedin-icon,
-.discord-icon,
-.email-icon {
-	color: #fff;
-	font-size: 20px;
-}
-
 .contact-info {
 	text-align: center;
 	margin: 10px 0;
 }
 
-p.strong {
-	font-size: 24px;
+/* Classes to modify text */
+.strong {
 	font-weight: bold;
-	text-align: center !important;
 }
 
-div.padded {
-	padding: 50px;
+.italic {
+	font-style: italic;
 }
 
-ul.service_items {
+.underline {
+	text-decoration: underline;
+}
+
+.text-center {
 	display: flex;
-	justify-content: center;
+	justify-content: center; /* Horizontally center the content */
+	align-items: center; /* Vertically center the content */
+	text-align: center;
 }
 
-li.service_item {
-	width: 30%;
-	min-width: 400px;
-	border: 3px solid black;
-	padding: 20px;
-	margin: 10px;
+.font-body {
+	font-family: 'Nunito Sans', 'sans-serif';
+	font-size: 20px;
 }
 
-p.service_item_body {
-	font-size: 18px;
+.font-24 {
+	font-size: 24px;
 }
+
+.list {
+	margin-left: 4em;
+}
+
+.subList {
+	margin-left: 2em;
+}
+
+.justify {
+	text-align: justify;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -522,6 +636,8 @@ p.service_item_body {
 (min-resolution: 120dpi) {
 	/* Style adjustments for high resolution devices */
 }
+
+
 
 /* ==========================================================================
    Print styles.
