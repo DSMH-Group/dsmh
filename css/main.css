@@ -176,9 +176,9 @@ body {
 	background-color: #fff;
 }
 
-
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
+	/* Styles for screens up to 600px wide */
 	div.hero-content {
 		width: 100vw;
 	}
@@ -191,6 +191,7 @@ body {
 
 /* Tablet styles */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+	/* Styles for screens between 601px and 1024px wide wide */
 	div.hero-content {
 		width: 400px
 	}
@@ -203,6 +204,7 @@ body {
 
 /* Desktop styles */
 @media only screen and (min-width: 1025px) {
+	/* Styles for screens wider than 1024px */
 	div.hero-content {
 		width: 500px
 	}
